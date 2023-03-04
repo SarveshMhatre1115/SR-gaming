@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+ 	<head>
+	<meta charshet="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SR GAMING SITE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images\x.ico">
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+  
+</head>
+<body>
+	<video id="background-video" autoplay loop muted poster="Pexels Videos 2715412.mp4">
+		<source src="videos\Pexels Videos 2715412.mp4" type="video/mp4">
+		</video>
+	
+<!--slideshow-->
+<div class="w3-content w3-section" style="max-width: 1387px;
+margin: -98px;">
+  <img class="mySlides" src="iimages\aa.jpg" style="width:100%">
+  <img class="mySlides" src="images\win.jpg" style="width:100%">
+  <img class="mySlides" src="images\win1.jpg" style="width:100%">
+
+<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+		
+			
+		<header>
+		  <div class="logo">
+			<img src="images\logo3.png" >
+		  </div>
+
+		  <div class="search-wrapper ">
+			<div class="input-holder ">
+				<input type="text " class="search-input " placeholder="Type to search " />
+				<button class="search-icon " onclick="searchToggle(this, event); ">
+					<span></span>
+				</button>
+			</div>
+			<span class="close " onclick="searchToggle(this, event); "></span>
+		</div>
+
+		
+		  <label>
+			<input type="checkbox">
+			<div class="toggle">
+				<span class="top_line common"></span>
+				<span class="middle_line common"></span>
+				<span class="bottom_line common"></span>
+			</div>
+			<div class="slide">
+		<ul class="nav">
+		  <li><a href="home.html">Home</a></li>
+		   <li><a href="About.html">About</a></li>
+			 <li><a href="game.html">Games</a></li>
+			 <li><a href="Tournament.html">Tournaments</a></li>
+			 <li><a href="#contact">Contact</a></li>
+       <li class="btn"><a href ="SR\signup.php">Registration</a></li>
+			
+		</ul>
+	</label>
+
+		<div class="toggleMenu" onclick="toggleMenu();"></div>
+
+	</header>
+		
+		  
+<div class="games" id="Games">
+    <h2>Popular Games</h2>
+    <ul>
+      <li class="list active" data-filter="all">All</li>
+      <li class="list active" data-filter="pc">Pc games</li>
+      <li class="list active" data-filter="moblie">Moblie games</li>
+    </ul>
+
+    <div class="cardBx">
+      <div class="card" data-item="Moblie">
+          <img src="images/trending2.jpg">
+          <div class="content">
+            <h4>Call of Duty: Mobile</h4>
+            <div class="progress-line"><span></span></div>
+            <div class="info">
+              <p>Pricing<br><span>$10</span></p>
+                <a href="#">Play Now</a>
+            </div>
+          </div>
+      </div>
+
+      <div class="card" data-item="Moblie">
+        <img src="images/new4.jpg">
+        <div class="content">
+          <h4>Clash Royale</h4>
+          <div class="progress-line"><span></span></div>
+          <div class="info">
+            <p>Pricing<br><span>$10</span></p>
+              <a href="#">Play Now</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="card" data-item="Moblie">
+      <img src="images/unnamed.png">
+      <div class="content">
+        <h4>Rail Rush</h4>
+        <div class="progress-line"><span></span></div>
+        <div class="info">
+            <p>Pricing<br><span>$10</span></p>
+            <a href="#">Play Now</a>
+        </div>
+      </div>
+  </div>
+  <div class="card" data-item="pc">
+    <img src="images/GTA_1.jpg">
+    <div class="content">
+      <h4>Grand Theft Auto(GTA)</h4>
+      <div class="progress-line"><span></span></div>
+      <div class="info">
+          <p>Pricing<br><span>$10</span></p>
+          <a href="#">Play Now</a>
+      </div>
+    </div>
+</div>
+
+<div class="card" data-item="pc">
+  <img src="images/new7.png">
+  <div class="content">
+    <h4>Fortnite</h4>
+    <div class="progress-line"><span></span></div>
+    <div class="info">
+        <p>Pricing<br><span>$10</span></p>
+        <a href="#">Play Now</a>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-item="pc">
+  <img src="images/new1.jpg">
+  <div class="content">
+    <h4>Subway Surfers</h4>
+    <div class="progress-line"><span></span></div>
+    <div class="info">
+        <p>Pricing<br><span>$10</span></p>
+        <a href="#">Play Now</a>
+    </div>
+  </div>
+</div>
+<div class="card" data-item="Moblie">
+  <img src="images/22.jpg">
+  <div class="content">
+    <h4>Games Name</h4>
+    <div class="progress-line"><span></span></div>
+    <div class="info">
+        <p>Pricing<br><span>$10</span></p>
+        <a href="#">Play Now</a>
+    </div>
+  </div>
+</div>
+<div class="card" data-item="Moblie">
+  <img src="images/new5.png">
+  <div class="content">
+    <h4>Minecrafte</h4>
+    <div class="progress-line"><span></span></div>
+    <div class="info">
+        <p>Pricing<br><span>$10</span></p>
+        <a href="#">Play Now</a>
+    </div>
+  </div>
+</div>
+<div class="card" data-item="Moblie">
+  <img src="images/3.jpeg">
+  <div class="content">
+    <h4>Ludo King</h4>
+    <div class="progress-line"><span></span></div>
+    <div class="info">
+        <p>Pricing<br><span>$10</span></p>
+        <a href="#">Play Now</a>
+    </div>
+  </div>
+</div>
+<div class="card" data-item="Moblie">
+  <img src="images/trending4.jpg">
+  <div class="content">
+    <h4>Ghost of Tsushima</h4>
+    <div class="progress-line"><span></span></div>
+    <div class="info">
+        <p>Pricing<br><span>$10</span></p>
+        <a href="#">Play Now</a>
+    </div>
+  </div>
+</div>
+<div class="card" data-item="Moblie">
+  <img src="images/MN_Headball_PageThumbnail.jpg">
+  <div class="content">
+    <h4>Head Ball</h4>
+    <div class="progress-line"><span></span></div>
+    <div class="info">
+        <p>Pricing<br><span>$10</span></p>
+        <a href="#">Play Now</a>
+    </div>
+  </div>
+</div>
+<div class="card" data-item="Moblie">
+  <img src="images/2.jpg">
+  <div class="content">
+    <h4>World Cricket Championship</h4>
+    <div class="progress-line"><span></span></div>
+    <div class="info">
+        <p>Pricing<br><span>$10</span></p>
+        <a href="#">Play Now</a>
+    </div>
+  </div>
+</div>
+</div>
+ </div>
+  <!--Contact-->
+ <div class="contact" id="contact">
+    <img src="images/iphone-4699057_1280.jpg">
+    <div class="form">
+      <h1>Contact Us</h1>
+      <div class="inputBx">
+        <p>Enter Name</p>
+        <input type="text" placeholder="Full Name">
+      </div>
+      <div class="inputBx">
+        <p>Enter Email</p>
+        <input type="text" placeholder="full Name">
+      </div>
+      <div class="inputBx">
+        <p>Message</p>
+        <textarea placeholder="type here..."></textarea>
+      </div>
+      <div class="inputBx">
+        <input type="submit" name="Submit">
+      </div>
+    </div>
+   </div>
+  <!--Footer-->
+  <footer>
+		<div class="info">
+			<div class="logo">
+			<img src="images/logo3.png" >
+		  </div>
+			  <p><i class='bx bx-copyright' ></i>2022 All Rights Reserved</p>
+			  <ul>
+				 <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+				 <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+				 <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+				 <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+				</ul>
+			   </div>
+		</footer>
+    <script src="main.js"></script>
+  </body>
+  </html>
+  
